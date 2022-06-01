@@ -10,6 +10,11 @@ function clickEvent(first, last) {
     }
 }
 
+function clicked(inputClicked) {
+    currentElement = inputClicked
+    document.getElementById(userInput[currentElement]).value = ""
+}
+
 function press(number) {
     var currentInput = document.getElementById(userInput[currentElement])
     currentInput.value = number;
