@@ -1,2 +1,7 @@
-.calculator {
+.user-input {
+    display: flex;
+}
+
+.user-input input {
+    width: 20px;
 }
