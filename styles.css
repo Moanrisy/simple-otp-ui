@@ -21,3 +21,8 @@
 .user-input input {
     width: 20px;
 }
+
+.text-only-btn {
+    border: none;
+    background-color: transparent;
+}
