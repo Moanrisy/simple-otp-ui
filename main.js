@@ -54,15 +54,18 @@ function press(number) {
     deleteInput.focus()
   }
 
-  if (number != 'x' && currentElement < 5) {
+  if (number != 'x') {
     currentInput.value = number;
     currentElement += 1;
-    document.getElementById(userInput[currentElement]).focus();
+    if (currentElement < 5) {
+      document.getElementById(userInput[currentElement]).focus();
+    }
+
+    if (currentElement == 6) {
+      checkOTP();
+    }
   }
 
-  if (currentElement == 5) {
-    checkOTP();
-  }
 }
 
 function checkOTP() {
