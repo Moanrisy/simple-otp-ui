@@ -1,8 +1,14 @@
 const firstInput = document.getElementById("first")
 const userInput = ["first", "second", "third", "fourth", "fifth", "sixth"];
+const resendOtpBtn = document.getElementById("resendOtp-btn")
+
 let currentElement = 0;
 
 firstInput.focus()
+
+resendOtpBtn.addEventListener('click', () => {
+    alert("OTP sent")
+})
 
 function clickEvent(first, last) {
     if (last != "last") {
