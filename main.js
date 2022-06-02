@@ -46,15 +46,22 @@ function clicked(inputClicked) {
 
 function press(number) {
   var currentInput = document.getElementById(userInput[currentElement]);
-  currentInput.value = number;
+  var deleteInput = document.getElementById(userInput[currentElement-1]);
+
+  if (number == 'x') {
+    deleteInput.value = ""
+    currentElement-=1
+    deleteInput.focus()
+  }
+
+  if (number != 'x' && currentElement < 5) {
+    currentInput.value = number;
+    currentElement += 1;
+    document.getElementById(userInput[currentElement]).focus();
+  }
 
   if (currentElement == 5) {
     checkOTP();
-  }
-
-  if (currentElement < 5) {
-    currentElement += 1;
-    document.getElementById(userInput[currentElement]).focus();
   }
 }
 
