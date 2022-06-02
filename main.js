@@ -1,10 +1,15 @@
 const firstInput = document.getElementById("first")
 const userInput = ["first", "second", "third", "fourth", "fifth", "sixth"];
 const resendOtpBtn = document.getElementById("resendOtp-btn")
+const backBtn = document.getElementById("back-btn")
 
 let currentElement = 0;
 
 firstInput.focus()
+
+backBtn.addEventListener('click', () => {
+    alert('back button clicked')
+})
 
 resendOtpBtn.addEventListener('click', () => {
     alert("OTP sent")
