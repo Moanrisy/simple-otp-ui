@@ -1,3 +1,11 @@
+.content {
+    opacity: 0;
+}
+
+.content.active {
+    opacity: 1;
+}
+
 .user-input {
     display: flex;
 }
