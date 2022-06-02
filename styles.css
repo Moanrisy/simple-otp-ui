@@ -6,6 +6,14 @@
     opacity: 1;
 }
 
+.input-number {
+    opacity: 0;
+}
+
+.input-number.active {
+    opacity: 1;
+}
+
 .user-input {
     display: flex;
 }
